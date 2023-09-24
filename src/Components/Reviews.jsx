@@ -8,14 +8,14 @@ const Reviews = () => {
     {
       name: "John Doe",
       comment:
-        "Travigo helps me a lot in finding interesting tourist destinations.",
+        "TripAdvise helps me a lot in finding interesting tourist destinations.",
       rating: 5,
       avatar: "/Avatars/avatar-1.webp",
     },
     {
       name: "Jane Smith",
       comment:
-        "Thanks to travigo, I can now realize my dream of traveling around the world.",
+        "Thanks to TripAdvise, I can now realize my dream of traveling around the world.",
       rating: 4,
       avatar: "/Avatars/avatar-2.webp",
     },

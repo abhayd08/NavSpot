@@ -10,7 +10,7 @@ import "./Login.css";
 const Login = () => {
   const { enqueueSnackbar } = useSnackbar();
   const [formData, setFormData] = useState({ username: "", password: "" });
-  const [buttonContent, setButtonContent] = useState("Login to Trivago");
+  const [buttonContent, setButtonContent] = useState("Login to TripAdvise");
   const navigate = useNavigate();
 
   const login = async (formData) => {
@@ -22,13 +22,13 @@ const Login = () => {
       ) {
         enqueueSnackbar("Logged in successfully !", { variant: "success" });
         localStorage.setItem("isLoggedIn", true);
-        setButtonContent("Login to Trivago");
+        setButtonContent("Login to TripAdvise");
         navigate("/");
       } else {
         enqueueSnackbar("Enter the correct username or password.", {
           variant: "warning",
         });
-        setButtonContent("Login to Trivago");
+        setButtonContent("Login to TripAdvise");
       }
     }, 800);
   };
