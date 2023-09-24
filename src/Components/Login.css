@@ -1,0 +1,46 @@
+.form {
+  background-color: white;
+  border-radius: 1rem;
+  max-width: 95%;
+  width: 450px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 5rem !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+.title {
+  color: #088966;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.secondary-action {
+  padding: 1rem 0;
+}
+
+.link {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link:focus {
+  color: #047b5b;
+}
+
+.link:active {
+  color: #004f3a;
+}
+
+.link:visited {
+  color: #45c09f;
+}
+
+.button {
+  background-color: #0a9671 !important;
+  margin-top: 35px !important;
+}
+
+.button:hover {
+  background-color: #00845c !important;
+}

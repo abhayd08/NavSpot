@@ -1,0 +1,267 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0.45rem;
+  padding-left: 0.75rem;
+}
+
+#header-brand {
+  position: relative;
+  letter-spacing: 0.3px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 800;
+}
+
+.banner-txt {
+  line-height: 2.75rem;
+  font-family: "Fredoka", "Bricolage Grotesque", sans-serif;
+}
+
+.secondary-banner-txt {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.login {
+  position: relative;
+  color: forestgreen !important;
+}
+
+.nav-item {
+  position: relative;
+  font-weight: 600;
+  color: #2c3640;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+.nav-item:active {
+  transform: translateY(0.5rem);
+}
+
+Button {
+  text-transform: none !important;
+}
+
+#register {
+  border-radius: 5rem;
+  padding: 0.75rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  color: white !important;
+  background-color: #24c08b;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+#register:hover {
+  background-color: #009664;
+  transform: scale(1.02);
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0.55rem;
+  height: 2px;
+  background-color: green;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.nav-item:hover::before {
+  opacity: 1;
+}
+
+#header-banner {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  width: 100%;
+}
+
+.nav-btn {
+  font-weight: 600 !important;
+  width: 8.3rem !important;
+}
+
+.nav-btn:first-child {
+  border-radius: 2rem;
+  padding: 0.6rem;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  color: white !important;
+  background-color: #24c08b;
+  text-transform: none;
+  letter-spacing: 0.75px;
+}
+
+.nav-btn:first-child:hover {
+  background-color: #009664;
+  transform: scale(1.02);
+}
+
+.nav-btn:last-child {
+  border-radius: 2rem;
+  padding: 0.6rem;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  color: black !important;
+  background-color: white;
+  text-transform: none;
+  letter-spacing: 0.75px;
+}
+
+.nav-btn:last-child:hover {
+  background-color: rgb(220, 218, 218);
+  transform: scale(1.02);
+}
+
+.d-none {
+  display: none !important;
+}
+
+#header-brand::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 9px;
+  transform: translate(-50%, -50%);
+  width: 1.15rem;
+  height: 0.4rem;
+  background-color: green;
+  border-radius: 1rem;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 5.8px;
+  transform: translate(-50%, -50%);
+  width: 0.65rem;
+  height: 0.25rem;
+  background-color: darkcyan;
+  border-radius: 1rem;
+  opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  #register {
+    width: 5.75rem !important;
+    height: 2.75rem !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .banner-txt {
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-menu:nth-child(2) {
+    display: none !important;
+  }
+
+  .secondary-banner-txt {
+    font-size: 0.825rem;
+  }
+}
+
+@media (max-width: 342px) {
+  .banner-txt {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .secondary-banner-txt {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 305px) {
+  .banner-txt {
+    font-size: 1.8rem;
+  }
+
+  #register {
+    display: none !important;
+  }
+
+  .login {
+    margin-right: 0.6rem;
+  }
+}
+
+@media (max-width: 275px) {
+  .banner-txt {
+    font-size: 1.6rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (max-width: 245px) {
+  .banner-txt {
+    font-size: 1.4rem;
+  }
+
+  .secondary-banner-txt {
+    font-size: 0.75rem;
+  }
+
+  .logout {
+    font-size: 0.72rem !important;
+    margin-right: -0.5rem !important;
+  }
+}
+
+@media (max-width: 198px) {
+  .logout {
+    font-size: 0.6rem !important;
+    margin-right: -0.85rem !important;
+  }
+
+  .login {
+    display: none !important;
+  }
+}
+
+@media (max-width: 190px) {
+  .logout {
+    display: none !important;
+  }
+}
+
+@media (max-width: 140px) {
+  .nav-btn {
+    width: auto !important;
+  }
+}

@@ -1,0 +1,21 @@
+.footer {
+  min-height: 15vh;
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.footer-heading {
+  letter-spacing: 1.25px;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.footer-text {
+  text-align: center;
+  padding: 0.5rem;
+  padding-top: 0;
+  width: 100%;
+}

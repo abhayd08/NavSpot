@@ -1,0 +1,76 @@
+.result-card {
+  background: linear-gradient(to bottom, rgb(158, 244, 215), white);
+  width: 99%;
+  margin: auto;
+  border-radius: 1rem !important;
+  margin-top: 0.45rem;
+  margin-bottom: 0.45rem;
+  min-height: 40vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.place-name {
+  font-family: "Bricolage Grotesque", sans-serif;
+  letter-spacing: 0.3px;
+  margin-bottom: 0.4rem;
+}
+
+.dropdown-btn {
+  transition: 0.2s ease-in-out;
+}
+
+.dropdown-btn:hover {
+  transform: scale(1.01);
+}
+
+.dropdown-btn:active {
+  transform: translateY(0.5rem);
+}
+
+.d-none {
+  display: none;
+}
+
+.reviews {
+  border-radius: 1rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.card-content {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.review-text {
+  animation: blur 1.25s ease-in-out;
+  height: 9rem;
+  overflow-y: scroll;
+}
+
+@media (min-width: 1100px) {
+  .review-text {
+    height: 10rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .review-text {
+    height: 8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .review-text {
+    width: 95%;
+  }
+}
+
+@media (max-width: 300px) {
+  .review-text {
+    width: 100%;
+  }
+
+  .review-text {
+    height: 10rem;
+  }
+}
