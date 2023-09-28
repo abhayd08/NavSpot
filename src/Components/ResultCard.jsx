@@ -165,7 +165,7 @@ const ResultCard = () => {
                 ) : (
                   ""
                 )}
-                <div className="flex gap-2 flex-wrap justify-center place-items-center">
+                <div className="flex gap-2 flex-wrap justify-center place-items-center mb-8">
                   {result.types
                     ? result.types.map((type, index) => {
                         if (type !== "point_of_interest") {
@@ -213,7 +213,7 @@ const ResultCard = () => {
               result.servesVegetarianFood ||
               result.servesWine ||
               result.reservable ? (
-                <div className="flex flex-col place-items-start mt-10 mb-3">
+                <div className="flex flex-col place-items-start mt-10 mb-5">
                   <p
                     style={{ transition: ".2s ease-in-out" }}
                     className="opacity-90 font-medium sm:text-lg text-center mb-1 cursor-pointer hover:opacity-90 active:translate-y-2"
@@ -366,8 +366,8 @@ const ResultCard = () => {
                 ""
               )}
 
-              {result.openingHours ? (
-                <div className="flex flex-col place-items-start mt-3 mb-2">
+              {result.currentOpeningHours ? (
+                <div className="flex flex-col place-items-start mt-4 mb-2">
                   <p
                     style={{ transition: ".2s ease-in-out" }}
                     className="opacity-90 font-medium sm:text-lg text-center mb-1 cursor-pointer hover:opacity-90 active:translate-y-2"
@@ -389,8 +389,8 @@ const ResultCard = () => {
                     }
                   `}
                   >
-                    {result.openingHours
-                      ? result.openingHours.weekdayDescriptions.map(
+                    {result.currentOpeningHours
+                      ? result.currentOpeningHours.weekdayDescriptions.map(
                           (description, index) => {
                             return (
                               <li
@@ -412,7 +412,7 @@ const ResultCard = () => {
               {result.reviews ? (
                 <div className="flex flex-col">
                   <p
-                    className="font-medium sm:text-lg cursor-pointer text-center opacity-90 hover:opacity-90 ml-1 mt-14 dropdown-btn"
+                    className="font-medium sm:text-lg cursor-pointer text-center opacity-90 hover:opacity-90 ml-1 mt-10 dropdown-btn"
                     onClick={() => {
                       if (currentSelectedReview === result.id) {
                         setCurrentSelectedReview("");

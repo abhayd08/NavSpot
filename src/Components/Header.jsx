@@ -11,7 +11,7 @@ export default ({ component }) => {
       <div id="header" className="pt-7 pb-3" direction="row">
         <a href="/">
           <div className="text-3xl" id="header-brand">
-            TripAdvise
+            NavSpot
           </div>
         </a>
         <div className="nav-menu space-x-8">

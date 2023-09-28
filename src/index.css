@@ -9,9 +9,8 @@ body {
   font-family: "Comfortaa", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#root {
+  min-height: 100vh;
 }
 
 @keyframes fadeIn {

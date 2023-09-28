@@ -12,9 +12,11 @@ function Intro() {
   });
   return (
     <>
-      <Header component="Intro" />
-      {isLoggedIn ? <Dashboard /> : ""}
-      <Reviews />
+      <div style={{ minHeight: "80vh" }}>
+        <Header component="Intro" />
+        {isLoggedIn ? <Dashboard /> : ""}
+        <Reviews />
+      </div>
       <Footer />
     </>
   );

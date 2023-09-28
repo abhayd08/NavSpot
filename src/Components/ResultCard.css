@@ -5,7 +5,6 @@
   border-radius: 1rem !important;
   margin-top: 0.45rem;
   margin-bottom: 0.45rem;
-  min-height: 40vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   animation: fadeIn 1s ease-in-out;
 }
